@@ -1,0 +1,79 @@
+.list-item{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid hsla(0,0%,100%,.1);
+    line-height: 50px;
+    overflow: hidden;
+    display: flex;
+    .list-name{
+        .list-menu{
+            .hover{
+                cursor: pointer;
+                display: none !important;
+            }
+        }
+    }
+    
+    &:hover{
+        .list-time{
+            .iconfont{
+                display: block;
+            }
+        }
+    }
+    &:hover{
+        .list-name{
+            .list-menu{
+                .hover{
+                    display: block !important;
+                }
+            }
+        }       
+    }
+    &.list-header{
+        span{
+            color: #fff;
+        }
+        .list-name{
+            flex: 1;
+            padding-left: 40px;
+            
+        }
+        .list-singer{
+            width: 300px;
+        }
+        .list-time{
+            width: 50px;
+        }
+    }
+    
+}
+
+@media (max-width: 1440px){
+        .list-item{
+            .list-album{
+                width: 200px;
+            }
+            .list-header{
+                .list-singer{
+                    width: 200px;
+                }
+            }
+        }
+    }           
+
+@media (max-width: 1200px){
+        .musicList{
+            .list-item.list-header{
+                .list-singer{
+                    width: 150px;
+                }
+            }
+            .list-item{
+                .list-album{
+                    width: 150px;
+                }
+            }
+        }
+           
+}
